@@ -6,8 +6,8 @@ import (
 )
 
 type HealthCheckResponse struct {
-	Status string `json:"status"`
-	Code   int    `json:"code"`
+	Message string `json:"message"`
+	Code    int    `json:"code"`
 }
 
 func (c *Client) HealthCheck(ctx context.Context) (*HealthCheckResponse, error) {
